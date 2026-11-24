@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102b52">
+  <title>CareerBond BD | বাংলাদেশের চাকরির প্ল্যাটফর্ম</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fc;
+      color: #172b4d;
+    }
+    header {
+      background: #102b52;
+      color: white;
+      padding: 20px;
+    }
+    .brand { font-size: 25px; font-weight: bold; }
+    .brand span { color: #55d6be; }
+    .hero {
+      padding: 48px 20px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg,#102b52,#176b87);
+    }
+    .hero h1 { font-size: 30px; margin: 0 0 12px; }
+    .hero p { color: #dceaf5; line-height: 1.6; }
+    .search {
+      max-width: 500px;
+      margin: 24px auto 0;
+      display: flex;
+      gap: 8px;
+    }
+    input {
+      min-width: 0;
+      flex: 1;
+      padding: 14px;
+      border: 0;
+      border-radius: 9px;
+      font-size: 15px;
+    }
+    button {
+      border: 0;
+      border-radius: 9px;
+      padding: 0 18px;
+      background: #55d6be;
+      color: #102b52;
+      font-weight: bold;
+    }
+    main { padding: 25px 16px; max-width: 850px; margin: auto; }
+    h2 { font-size: 22px; }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 12px;
+    }
+    .category, .job {
+      background: white;
+      padding: 18px;
+      border-radius: 12px;
+      box-shadow: 0 3px 14px #102b5210;
+    }
+    .category { font-weight: bold; }
+    .job { margin-top: 14px; }
+    .job p { color: #65758b; font-size: 14px; }
+    .tag {
+      display: inline-block;
+      background: #e5f7f3;
+      color: #087b68;
+      padding: 6px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #718096;
+      font-size: 13px;
+    }
+    @media(max-width:400px) {
+      .hero h1 { font-size: 25px; }
+      .search { flex-direction: column; }
+      .search button { padding: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">CareerBond <span>BD</span></div>
+  </header>
+
+  <section class="hero">
+    <h1>আপনার ক্যারিয়ারের নতুন ঠিকানা</h1>
+    <p>বাংলাদেশের সরকারি ও বেসরকারি চাকরির সুযোগ খুঁজুন এক জায়গায়।</p>
+    <div class="search">
+      <input type="search" placeholder="চাকরি বা প্রতিষ্ঠানের নাম">
+      <button>খুঁজুন</button>
+    </div>
+  </section>
+
+  <main>
+    <h2>চাকরির ক্যাটাগরি</h2>
+    <div class="categories">
+      <div class="category">🏛️ সরকারি চাকরি</div>
+      <div class="category">🏢 বেসরকারি চাকরি</div>
+      <div class="category">🏦 ব্যাংক চাকরি</div>
+      <div class="category">🌍 NGO চাকরি</div>
+    </div>
+
+    <h2 style="margin-top:30px">সাম্প্রতিক চাকরি</h2>
+    <div class="job">
+      <span class="tag">ডেমো ডিজাইন</span>
+      <h3>চাকরির বিজ্ঞপ্তি এখানে দেখানো হবে</h3>
+      <p>প্রতিষ্ঠানের নাম · কর্মস্থল</p>
+    </div>
+  </main>
+
+  <footer>© 2026 CareerBond BD. All rights reserved.</footer>
+</body>
+</html>
